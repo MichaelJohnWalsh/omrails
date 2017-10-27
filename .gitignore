@@ -19,5 +19,8 @@
 
 /node_modules
 /yarn-error.log
-
+#Added this
+.DS_Store
 .byebug_history
+
+
