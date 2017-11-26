@@ -15,13 +15,23 @@ Rails.application.routes.draw do
       delete 'unfollow', to: 'follows#destroy'
     end
   end
-  resources :items
+  resources :items do
+    member do
+      post 'vote', to: 'votes#create'
+      delete 'unvote', to: 'votes#destroy'
   resources :submissions
   resources :tweets
+  end
+end
+
   
   root 'pages#home'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
 
+
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+

@@ -28,6 +28,7 @@ gem 'popper_js', '~> 1.12.3'
 gem 'activeadmin', '~> 1.1.0'
 gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 group :development, :test do
+  gem 'acts_as_votable', '~> 0.11.1'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
