@@ -24,11 +24,11 @@
           <td><%= item.text %></td>
           <td><%= link_to 'Show', item %></td>
           <% if user_signed_in? %>
-          <% if current_user.voted_up_on? item %>
-            <td><%= link_to 'Unvote', unvote_item_path(item), method: :delete %></td>
-          <% else %>
-            <td><%= link_to 'Vote', vote_item_path(item), method: :post %></td>
-          <% end %>
+            <% if current_user.voted_up_on? item %>
+              <td><%= link_to 'Unvote', unvote_item_path(item), method: :delete %></td>
+            <% else %>
+              <td><%= link_to 'Vote', vote_item_path(item), method: :post %></td>
+            <% end %>
           <% end %>
           <% if item.user == current_user %>
             <td><%= link_to 'Edit', edit_item_path(item) %></td>

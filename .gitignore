@@ -23,4 +23,5 @@
 .DS_Store
 .byebug_history
 
-
+#Ignore public system folder
+/public/system
