@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
-gem 'devise'
+gem "devise", ">= 4.6.0"
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'popper_js', '~> 1.12.3'
 gem 'activeadmin', '~> 1.1.0'
